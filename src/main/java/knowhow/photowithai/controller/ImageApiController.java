@@ -16,7 +16,9 @@
 //
 //    @PostMapping("/upload/photos")
 //    public String uploadMulti(@RequestParam("files") List<MultipartFile> files) throws Exception {
-//
+//        for(int i = 0; i < files.size(); i++){
+//            System.out.println(files.stream().findAny());
+//        }
 //        System.out.println("uploaded");
 //        return "redirect:/";
 //    }
