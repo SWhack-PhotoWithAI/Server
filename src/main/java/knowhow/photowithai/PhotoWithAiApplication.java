@@ -9,6 +9,17 @@ import org.springframework.stereotype.*;
 @SpringBootApplication
 public class PhotoWithAiApplication {
 
+    @RequestMapping("/")
+    @ResponseBody
+    String home() {
+        return "Hello! This is a demo application!";
+    }
+
+    @RequestMapping("/hello")
+    @ResponseBody
+    String hello() {
+        return "Hello from Heroku!";
+    }
     public static void main(String[] args) {
         SpringApplication.run(PhotoWithAiApplication.class, args);
     }
